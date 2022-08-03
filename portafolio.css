@@ -1,0 +1,892 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+/*Inicio del header*/
+
+header {
+    position: fixed;
+    background-image: linear-gradient(195deg, #ff4242 0, #de2a01 12.5%, #db1604 25%, #f23b12 37.5%, #ea1313 50%, #ec2e0c 62.5%, #f9070f 75%, #e71527 87.5%, #f01432 100%);
+    font-size: 16px;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-principal {
+    display: flex;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    height: auto;
+    justify-content: flex-end;
+    max-width: 100%;
+    width: 100%;
+}
+
+.menu-principal ul {
+    display: flex;
+    font-size: 16px;
+    height: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    width: auto;
+}
+
+.barramenu {
+    box-sizing: border-box;
+    color: black;
+    display: list-item;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 22.4px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    width: auto;
+}
+
+.clic-menu {
+    cursor: pointer;
+    display: block;
+    width: auto;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-sizing: border-box;
+    color: black;
+    text-decoration-color: black;
+    text-align: left;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    line-height: 45px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+.clic-menu:hover {
+    color: white;
+}
+
+.clic-menu1 {
+    cursor: pointer;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    background-image: radial-gradient(circle at 120.71% 50%, #ff8b00 0, #ff7b00 12.5%, #ff6600 25%, #ff4802 37.5%, #fc0606 50%, #ef000d 62.5%, #e50015 75%, #de001e 87.5%, #da0029 100%);
+    border-radius: 100px;
+    box-sizing: border-box;
+    line-height: 45px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    height: auto;
+}
+
+.clic-menu1:hover {
+    color: black;
+}
+
+/*media queris - header*/
+@media (max-width: 640px){
+header {
+    display: none;
+    }
+}
+/**/
+
+/*Fin del header*/
+
+/*Inicio de mi presentación*/
+#presentacion {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    padding: 250px 60px 200px;
+}
+
+.quien-soy {
+    margin-left: 100px;
+}
+
+.quien-soy h2 {
+    display: block;
+    font-size: 35px;
+    color:black;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.quien-soy h1 {
+    display: block;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 70px;
+    background: linear-gradient(#ff4242 0, #de2a01 12.5%, #db1604 25%, #f23b12 37.5%, #ea1313 50%, #ec2e0c 62.5%, #f9070f 75%, #e71527 87.5%, #f01432 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.quien-soy h3 {
+    display: block;
+    font-size: 16px;
+    color: rgb(110, 106, 106);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 30px;
+}
+
+.mostrar-proyectos {
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-image: radial-gradient(circle at 120.71% 50%, #ff0000 0, #ff2f00 12.5%, #f2270c 25%, #ff4802 37.5%, #fc0606 50%, #ef000d 62.5%, #e50015 75%, #de001e 87.5%, #da0029 100%);
+    border-radius: 100px;
+    width: 200px;
+    height: auto;
+    line-height: 45px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;  
+}
+
+.imagen-programadora {
+    max-width: 310px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+/*media queris - presentacion*/
+
+@media (max-width: 640px){
+#presentacion {
+    flex-direction: column;
+    text-align: center;
+    height: 800px;
+    padding: 5px;
+    padding-top: 50px;
+    }
+
+h2, h1, h3 {
+    font-size: 16px;
+    margin-left: 50px;
+    }
+
+.imagen-programadora img {
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 50px;
+    }
+}
+/**/
+
+/*Fin de mi presentación*/
+
+/*Inicio de mis conocimientos*/
+#conocimientos {
+    display: flex;
+    background-color: rgb(255, 242, 242);
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.mis-conocimientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.mis-conocimientos h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mis-conocimientos p {
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lenguajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.lenguajes-de-programacion {
+    height: 230px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(246, 216, 216);
+    border-style: initial;
+}
+
+.lenguajes-de-programacion:hover {
+    color: red;
+    border-color: red;
+  }
+  
+.lenguajes-de-programacion:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.p-lenguaje {
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.devicon-html5-plain {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}   
+
+.devicon-css3-plain {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}
+
+.devicon-sass-original {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}
+
+.devicon-javascript-plain {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}
+
+.devicon-react-original {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}
+
+.devicon-git-plain {
+    font-size: 7em;
+    color:red;
+    padding: 5%;
+}
+
+/*media queris - conocimientos*/
+@media (max-width: 640px){
+.mis-conocimientos h2{
+    text-align: center;
+    font-size: 20px;
+    }
+
+.mis-conocimientos p{
+    text-align: center;
+    font-size: 16px;
+    }
+}
+/**/
+
+/*Fin de mis conocimientos*/
+
+/*Inicio de cita*/
+.cita {
+    text-align: center;
+    background-color:red;
+    width: 100%;
+    height: 50%;
+}
+
+.fa-quote-right {
+    font-size: 70px !important;
+    color: white;
+    padding-top: 80px;
+}
+.cita p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.cita h2 {
+    color: white;
+    font-size: 30px;
+}
+
+/*media queris - cita*/
+@media (max-width: 640px){
+.cita {
+    text-align: center;
+    }
+
+.cita p {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    }
+}
+/**/
+/*Fin de cita*/
+
+/*Inicio de mis proyectos*/
+#proyectos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mis-proyectos {
+    text-align: center; 
+}
+
+.mis-proyectos h2 {
+    justify-content: center;
+    font-size: 50px;
+    color: black;
+    padding-top: 60px;
+}
+.mis-proyectos p {
+    text-align: center;
+    color: black;
+    padding-bottom: 60px;
+    font-size: 20px;
+}
+
+.todos-mis-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:30px 20px 0 0;
+}
+
+.imagen-proyecto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 25%;
+    padding: 5%;
+    border: rgb(219, 203, 203) solid 1px;
+    border-radius: 5px;
+    height: 300px;
+    margin: 12px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+}
+
+.imagen-proyecto:hover {
+    border: 1px sólid red;
+    color: red;
+    transform: scale(0.8);
+    border-color: red;
+}
+
+/*media queris - proyectos*/
+@media (max-width: 640px){
+.mis-proyectos h2 {
+    padding: 50px;
+    font-size: 40px;
+    }
+    
+.mis-proyectos p{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    }
+
+.todos-mis-proyectos{
+    flex-direction: column;
+    padding-left: 40px;
+    }
+
+.imagen-proyecto, img{
+    height: 315px;
+    width: 260px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    }
+}
+/**/
+
+/*Fin de mis proyectos*/
+
+/*Inicio de sección de contactos*/
+#contactos {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    background-image: linear-gradient(195deg, #fbfbfb 0, #f3efef 12.5%, #fff3f0 25%, #ffffff 37.5%, #f0f0f0 50%, #ffe9e2 62.5%, #ededed 75%, #ffebec 87.5%, #efefef 100%);
+    padding: 80px 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div-contactos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: #ddd4d4 solid 2px;
+    border-radius: 10px;
+    background-color: white;
+    width: 85%;
+    height: 700px;
+}
+
+.contactame {
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.contactame h2 {
+    font-size: 35px;
+    font-weight: 930;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactame p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+    /*Redes Sociales*/
+
+.redes-sociales {
+    font-style: normal;
+}
+
+.contactos-iconos {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 130px;
+}
+
+.contactos-iconos a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.enlace {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.contactos-iconos i {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: normal; 
+}
+
+.contactos-iconos span {
+    color: black;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactos-iconos span:hover {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    /*Fin - Redes Sociales*/
+
+.formulario {
+    width: 50%;
+}
+
+.formulario h2 {
+    font-size: 35px;
+    font-weight: 930;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario span{
+    color:red;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.nombre-y-apellido {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.nombre-y-apellido input {
+    height: 50px;
+    width: 155px;
+}
+
+.correo-electronico input {
+    width: 500px;
+    height: 50px;
+}
+
+.escribir-mensaje textarea {
+    width: 500px;
+    height: 250px;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin: 20px 50px 16px 30px;
+}
+
+label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input[type="text" ] {
+    padding: 1px 2px;
+}
+
+input[type], textarea {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(251, 237, 237);
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: radial-gradient(circle at 120.71% 50%, #f35a5a 0, #f52d2d 12.5%, #fe0000 25%, #fc4646 37.5%, #fc0606 50%, #ff2f2f 62.5%, #ef2236 75%, #de001e 87.5%, #f4afaf 100%);
+    color: white;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 100px;
+    margin-top: 30px;
+    border: 1px solid red;
+    position: relative;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+}
+
+/*media queris - contactos*/
+@media (max-width: 640px){
+.div-contactos {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    width: 151%;
+    height: 100%;
+    }
+    
+.contactame {
+    flex-direction: column;
+    width: 50%;
+    margin-right: 50px;
+    margin-left: -18px;
+    padding-left: 20px;
+    padding-top: 50px;
+    }
+
+.contactos-iconos i {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    width: 45px;
+    height: 35px;
+    padding: 0px;
+    padding-top: 10%;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    }
+
+.contactos-iconos span {
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+    }
+
+
+.formulario {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    }
+
+.nombre-y-apellido input {
+    height: 40px;
+    width: 70px;
+   
+}
+
+.correo-electronico input {
+    height: 40px;
+    width: 300px;
+    }
+
+.escribir-mensaje textarea {
+    height: 150px;
+    width: 300px;
+    }
+}
+/**/
+
+/*Fin de sección de contactos*/
+
+/*Inicio de footer*/
+footer {
+    background-color: red; 
+    width: 100%;
+    height: 50%;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.piedepagina {
+    display: flex;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+}
+
+.piedepagina ul {
+    display: flex;
+    font-size: 14px;
+    color: white;
+    height: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    width: auto;
+}
+
+.menu-final {
+    box-sizing: border-box;
+    color: black;
+    display: list-item;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    text-align: left;
+    line-height: 22.4px;
+    width: auto;
+}
+
+.clic-final {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.iconos-menu {
+    display: block;
+    text-align: center;
+}
+
+.iconos-menu a {
+    text-decoration: none;
+}
+
+.iconos-menu i {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.iconos-menu i:hover {
+    transform: scale(1.2);
+    border: 1px sólid black;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.Rebeca {
+    text-align: center;
+    font-family: Edwardian Script ITC;
+    font-size: 30px;
+    color: black;
+}
+
+/*media queris - footer*/
+@media (max-width: 640px){
+.piedepagina {
+    display: none;
+    }
+}
+/**/
+
+/*Fin de footer*/
+
