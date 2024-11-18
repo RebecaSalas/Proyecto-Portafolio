@@ -14,7 +14,6 @@
 6. Sección y formulario de contacto.
 7. Footer con links de navegación y links de contacto.
 
-**Nota:** El portafolio tiene un diseño responsivo que se debe mejorar. ⌨️
 
 ➡️[Portafolio](https://rebecasalas.github.io/Proyecto-Portafolio/)
 
